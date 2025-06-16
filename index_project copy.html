@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>個人作品集</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+
+<header id="navbar">
+  <div class="logo">LOGO</div>
+  <nav>
+    <ul>
+      <li><a href="#about">關於我</a></li>
+      <li><a href="#works">作品集</a></li>
+      <li><a href="#color">彩繪</a></li>
+      <li><a href="#contact">聯絡方式</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="section">
+  <h1>首頁區塊</h1>
+  <p>歡迎來到我的個人網站</p>
+  <img src="image/top.jpg" alt="周杰倫" class="main-photo" />
+</section>
+
+<section id="about" class="section">
+  <h2>關於我</h2>
+  <ul>
+    <li>我是一位快樂且開朗的人</li>
+    <li>專長：
+      <ul>
+        <li>彩繪</li>
+        <li>平面設計</li>
+      </ul>
+    </li>
+  </ul>
+  <div class="photo-gallery">
+    <img src="image/自我介紹.jpg" alt="自我介紹圖片1" class="main-photo" />
+    <img src="image/自我介紹2.jpg" alt="自我介紹圖片2" class="main-photo" />
+  </div>
+</section>
+
+
+<section id="works" class="section with-gradient">
+  <h2>作品集</h2>
+  <div class="scroll-gallery">
+    <div class="image-card" tabindex="0" onclick="openImage(0)">
+      <img src="image/作品.jpg" alt="作品1">
+      <div class="detail">這是作品1的描述</div>
+    </div>
+    <div class="image-card" tabindex="0" onclick="openImage(1)">
+      <img src="image/作品2.jpg" alt="作品2">
+      <div class="detail">這是作品2的描述</div>
+    </div>
+    <div class="image-card" tabindex="0" onclick="openImage(2)">
+      <img src="image/作品3.jpg" alt="作品3">
+      <div class="detail">這是作品3的描述</div>
+    </div>
+  </div>
+</section>
+
+
+<div id="imageModal" class="modal hidden" tabindex="0" aria-hidden="true" role="dialog" aria-modal="true" aria-label="放大圖片視窗">
+  <span class="close" id="modalCloseBtn" aria-label="關閉">&times;</span>
+  <button id="modalPrevBtn" class="modal-nav" aria-label="上一張圖片">&lt;</button>
+  <img id="modalImage" class="modal-content" alt="放大圖片" />
+  <button id="modalNextBtn" class="modal-nav" aria-label="下一張圖片">&gt;</button>
+  <div id="modalDesc" class="modal-desc"></div>
+</div>
+
+
+<section id="color" class="section">
+  <h2>彩繪區</h2>
+  <p>這裡可以展示插畫、手繪等內容</p>
+</section>
+
+<section id="contact" class="section">
+  <h2>聯絡方式</h2>
+  <p>電話 0987044666</p>
+  <p>Email: ethan415.chen@gmail.com </p>
+  <p><a href="https://www.instagram.com/_yii____?igsh=eWYxNTkzYzgxdW45" target="_blank" rel="noopener noreferrer">IG連結</a></p>
+</section>
+
+</body>
+
+</html>
